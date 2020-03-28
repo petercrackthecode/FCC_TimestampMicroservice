@@ -10,7 +10,7 @@ let cors = require("cors");
 app.use(cors({ optionSuccessStatus: 200 })); // some legacy browsers choke on 204
 
 // https://expressjs.com/en/starter/static-files.html
-app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.static(path.join(__dirname, "/static")));
 
 // https://expressjs.com/en/starter/basic-routing.html
 app.get("/", (req, res) => {

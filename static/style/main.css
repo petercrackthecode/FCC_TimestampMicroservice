@@ -1,4 +1,8 @@
-h2, h3, h5, p {
+body > * {
+    padding: 10px;
+}
+
+h2, h3, h5, p, a {
     display: block;
     text-align: center;
 }
@@ -9,4 +13,5 @@ li {
 
 span {
     font-family: 'Courier New', Courier, sans-serif;
+    font-weight: bold;
 }
