@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href='./style/main.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class='container col-4 offset-4'>
+            <h2>API Project: Timestamp Microservice</h2>
+            <h3>User stories (WIP):</h3>
+            <ol>
+                <li>The API endpoint is <span>GET [project_url]/api/timestamp/:date_string?</span></li>
+                <li>A date string is valid if can be successfully parsed by <span>new Date(date_string).</span>
+                    Note that the unix timestamp needs to be an integer (not a string) specifying milliseconds.
+                    In our test we will use date string compliant with ISO-8601 (e.g. "2016-11-20") because this will ensure an UTC timstamp
+                </li>
+                <li>If the date string is empty it should be equivalent to trigger <span>new Date(), i.e. the service uses the current timestamp</span></li>
+                <li>If the date string is valid the api returns a JSON having the structure
+                    <span>{"unix": <date.getTime()>, "utc" : <date.toUTCString()> }</span>
+                    e.g. <span>{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29 GMT"}</span>
+                </li>
+                <li>If the date string is invalid the api returns a JSON having the structure:
+                    <span>{"error" : "Invalid Date" }.</span>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>
