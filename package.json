@@ -1,0 +1,23 @@
+{
+  "name": "timestampmicroservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petercrackthecode/FCC_TimestampMicroservice.git"
+  },
+  "author": "petercrackthecode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/petercrackthecode/FCC_TimestampMicroservice/issues"
+  },
+  "homepage": "https://github.com/petercrackthecode/FCC_TimestampMicroservice#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
