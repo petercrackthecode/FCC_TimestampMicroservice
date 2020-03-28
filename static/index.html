@@ -16,13 +16,16 @@
                 </li>
                 <li>If the date string is empty it should be equivalent to trigger <span>new Date(), i.e. the service uses the current timestamp</span></li>
                 <li>If the date string is valid the api returns a JSON having the structure
-                    <span>{"unix": <date.getTime()>, "utc" : <date.toUTCString()> }</span>
+                    <span>{"unix": &#60;date.getTime()&#62;, "utc" : &#60;date.toUTCString()&#62; }</span>
                     e.g. <span>{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29 GMT"}</span>
                 </li>
                 <li>If the date string is invalid the api returns a JSON having the structure:
                     <span>{"error" : "Invalid Date" }.</span>
                 </li>
             </ol>
+            <h5>Example Usage:</h5>
+            <h5>Example Output:</h5>
+            <p>by <a href='https://petercrackthecode.github.io/portfolioPeter'>Peter Nguyen</a></p>
         </div>
     </body>
 </html>

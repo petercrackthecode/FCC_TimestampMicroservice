@@ -1,4 +1,8 @@
-h2, h3 {
+h2, h3, h5, p {
     display: block;
     text-align: center;
+}
+
+li {
+    padding: 5px;
 }
